@@ -80,7 +80,7 @@ group :test do
 end
 
 group :doc do
-  gem 'redcarpet'       # documentation
+  gem 'redcarpet'       , '>= 3.5.1' # documentation
   gem 'github-markdown' # documentation
   gem 'yard'            # documentation
   # gem 'rails-erd'      # graph
