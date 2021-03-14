@@ -65,7 +65,7 @@
     "ts-loader": "8.0.1",
     "tslint": "6.1.2",
     "typescript": "3.9.7",
-    "webpack": "4.44.0",
+    "webpack": "5.0.0",
     "webpack-stream": "5.2.1",
     "aribts": "^2.1.12",
     "b24.js": "1.0.3",
