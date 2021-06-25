@@ -1,2 +1,2 @@
 source 'https://rubygems.org'
-gem 'one_gadget'
+gem 'one_gadget', '>= 1.7.2'
