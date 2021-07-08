@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'sensu'
+gem 'sensu', '>= 1.7.0'
 
 # integration
 gem 'sensu-plugins-influxdb'
