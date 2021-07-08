@@ -10,7 +10,7 @@ source 'https://rubygems.org'
 ruby '>= 2.5.0'
 
 group :default do
-  gem 'addressable','>= 2.7.0', '< 2.8'
+  gem 'addressable', '~> 2.8'
   gem 'delayer','>= 1.0.1', '< 1.1'
   gem 'delayer-deferred','>= 2.1.1', '< 2.2'
   gem 'diva','>= 1.0.1', '< 1.1'
@@ -24,7 +24,7 @@ group :test do
   gem 'test-unit','>= 3.3.4', '< 4.0'
   gem 'rake','>= 13.0.1'
   gem 'mocha','>= 1.11.1'
-  gem 'webmock','>= 3.7.6'
+  gem 'webmock', '>= 3.7.6'
   gem 'ruby-prof','>= 1.1.0'
 end
 
