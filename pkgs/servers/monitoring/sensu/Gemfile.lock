@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.6.0)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     amq-protocol (2.0.1)
     amqp (1.6.0)
       amq-protocol (>= 2.0.1)
@@ -40,7 +40,7 @@ GEM
     ffi (1.9.21)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    http_parser.rb (0.6.0)
+    http_parser.rb (0.7.0)
     influxdb (0.3.13)
       cause
       json
@@ -56,12 +56,12 @@ GEM
     netrc (0.11.0)
     oj (2.18.1)
     parse-cron (0.1.4)
-    public_suffix (3.0.3)
+    public_suffix (4.0.6)
     rest-client (2.0.2)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    sensu (1.7.0)
+    sensu (1.9.0)
       em-http-request (= 1.1.5)
       em-http-server (= 0.1.8)
       eventmachine (= 1.2.7)
@@ -71,9 +71,9 @@ GEM
       sensu-json (= 2.1.1)
       sensu-logger (= 1.2.2)
       sensu-redis (= 2.4.0)
-      sensu-settings (= 10.15.0)
+      sensu-settings (= 10.17.0)
       sensu-spawn (= 2.5.0)
-      sensu-transport (= 8.2.0)
+      sensu-transport (= 8.3.0)
     sensu-extension (1.5.2)
       eventmachine
     sensu-extensions (1.11.0)
@@ -128,7 +128,7 @@ GEM
       sensu-plugin (~> 1.2)
     sensu-redis (2.4.0)
       eventmachine
-    sensu-settings (10.15.0)
+    sensu-settings (10.17.0)
       parse-cron
       sensu-json (>= 1.1.0)
     sensu-spawn (2.5.0)
@@ -136,7 +136,7 @@ GEM
       em-worker (= 0.0.2)
       eventmachine
       ffi (= 1.9.21)
-    sensu-transport (8.2.0)
+    sensu-transport (8.3.0)
       amq-protocol (= 2.0.1)
       amqp (= 1.6.0)
       eventmachine
@@ -151,7 +151,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  sensu
+  sensu (>= 1.7.0)
   sensu-plugins-disk-checks
   sensu-plugins-http
   sensu-plugins-influxdb
