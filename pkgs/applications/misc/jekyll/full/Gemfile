@@ -3,10 +3,10 @@ source "https://rubygems.org"
 gem "jekyll"
 
 gem "jekyll-avatar"
-gem "jekyll-mentions"
+gem "jekyll-mentions", ">= 1.6.0"
 gem "jekyll-seo-tag"
 gem "jekyll-sitemap"
-gem "jemoji"
+gem "jemoji", ">= 0.12.0"
 
 # Optional dependencies:
 gem "jekyll-coffeescript"
