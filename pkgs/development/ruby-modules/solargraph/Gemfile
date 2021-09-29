@@ -1,2 +1,2 @@
 source 'https://rubygems.org'
-gem 'solargraph'
+gem 'solargraph', '>= 0.39.17'
