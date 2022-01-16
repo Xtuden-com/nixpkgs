@@ -12,7 +12,7 @@
     "url": "https://gitlab.com/argit/matrix-recorder.git"
   },
   "dependencies": {
-    "marked": "^0.6.2",
+    "marked": "^4.0.10",
     "matrix-js-sdk": "^0.7.13",
     "mime-types": "^2.1.14",
     "mustache": "^2.3.0",
