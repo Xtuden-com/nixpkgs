@@ -8,7 +8,7 @@ gem 'bootsnap', '~> 1.4.6'
 gem 'nakayoshi_fork', '~> 0.0.4'
 
 # Responders respond_to and respond_with
-gem 'responders', '~> 3.0'
+gem 'responders', '~> 3.0', '>= 3.0.0'
 
 gem 'sprockets', '~> 3.7.0'
 
@@ -25,7 +25,7 @@ gem 'faraday', '~> 0.12'
 gem 'marginalia', '~> 1.8.0'
 
 # Authentication libraries
-gem 'devise', '~> 4.6'
+gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'doorkeeper', '~> 5.0.3'
 gem 'doorkeeper-openid_connect', '~> 1.6.3'
 gem 'omniauth', '~> 1.8'
@@ -38,10 +38,10 @@ gem 'omniauth-gitlab', '~> 1.0.2'
 gem 'omniauth-google-oauth2', '~> 0.6.0'
 gem 'omniauth-kerberos', '~> 0.3.0', group: :kerberos
 gem 'omniauth-oauth2-generic', '~> 0.2.2'
-gem 'omniauth-saml', '~> 1.10'
+gem 'omniauth-saml', '~> 1.10', '>= 1.10.0'
 gem 'omniauth-shibboleth', '~> 1.3.0'
 gem 'omniauth-twitter', '~> 1.4'
-gem 'omniauth_crowd', '~> 2.2.0'
+gem 'omniauth_crowd', '~> 2.2.3'
 gem 'omniauth-authentiq', '~> 0.3.3'
 gem 'omniauth_openid_connect', '~> 0.3.3'
 gem "omniauth-ultraauth", '~> 0.0.2'
@@ -92,14 +92,14 @@ gem 'graphql', '~> 1.10.5'
 # TODO: remove app/views/graphiql/rails/editors/show.html.erb when https://github.com/rmosolgo/graphiql-rails/pull/71 is released:
 # https://gitlab.com/gitlab-org/gitlab/issues/31747
 gem 'graphiql-rails', '~> 1.4.10'
-gem 'apollo_upload_server', '~> 2.0.0.beta3'
+gem 'apollo_upload_server', '~> 2.0.0.0'
 gem 'graphql-docs', '~> 1.6.0', group: [:development, :test]
 
 # Disable strong_params so that Mash does not respond to :permitted?
 gem 'hashie-forbidden_attributes'
 
 # Pagination
-gem 'kaminari', '~> 1.0'
+gem 'kaminari', '~> 1.2', '>= 1.2.1'
 
 # HAML
 gem 'hamlit', '~> 2.11.0'
@@ -109,11 +109,11 @@ gem 'carrierwave', '~> 1.3'
 gem 'mini_magick'
 
 # for backups
-gem 'fog-aws', '~> 3.5'
+gem 'fog-aws', '~> 3.5', '>= 3.5.2'
 # Locked until fog-google resolves https://github.com/fog/fog-google/issues/421.
 # Also see config/initializers/fog_core_patch.rb.
 gem 'fog-core', '= 2.1.0'
-gem 'fog-google', '~> 1.9'
+gem 'fog-google', '~> 1.9', '>= 1.9.1'
 gem 'fog-local', '~> 0.6'
 gem 'fog-openstack', '~> 1.0'
 gem 'fog-rackspace', '~> 0.1.1'
@@ -136,7 +136,7 @@ gem 'aws-sdk'
 gem 'faraday_middleware-aws-signers-v4'
 
 # Markdown and HTML processing
-gem 'html-pipeline', '~> 2.12'
+gem 'html-pipeline', '~> 2.12', '>= 2.12.2'
 gem 'deckar01-task_list', '2.3.1'
 gem 'gitlab-markup', '~> 1.7.1'
 gem 'github-markup', '~> 1.7.0', require: 'github/markup'
@@ -152,7 +152,7 @@ gem 'asciidoctor-plantuml', '~> 0.0.12'
 gem 'rouge', '~> 3.19.0'
 gem 'truncato', '~> 0.7.11'
 gem 'bootstrap_form', '~> 4.2.0'
-gem 'nokogiri', '~> 1.10.9'
+gem 'nokogiri', '~> 1.13.2'
 gem 'escape_utils', '~> 1.1'
 
 # Calendar rendering
@@ -252,11 +252,11 @@ gem 'ruby-fogbugz', '~> 0.2.1'
 gem 'kubeclient', '~> 4.6.0'
 
 # Sanitize user input
-gem 'sanitize', '~> 4.6'
+gem 'sanitize', '~> 4.6', '>= 4.6.6'
 gem 'babosa', '~> 1.0.2'
 
 # Sanitizes SVG input
-gem 'loofah', '~> 2.2'
+gem 'loofah', '~> 2.5', '>= 2.5.0'
 
 # Working with license
 gem 'licensee', '~> 8.9'
@@ -277,16 +277,16 @@ gem 'fast_blank'
 gem 'gitlab-chronic', '~> 0.10.5'
 gem 'gitlab_chronic_duration', '~> 0.10.6.2'
 
-gem 'webpack-rails', '~> 0.9.10'
+gem 'webpack-rails', '~> 0.9.11'
 gem 'rack-proxy', '~> 0.6.0'
 
 gem 'sassc-rails', '~> 2.1.0'
 gem 'uglifier', '~> 2.7.2'
 
 gem 'addressable', '~> 2.7'
-gem 'font-awesome-rails', '~> 4.7'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 gem 'gemojione', '~> 3.3'
-gem 'gon', '~> 6.2'
+gem 'gon', '~> 6.2', '>= 6.2.0'
 gem 'request_store', '~> 1.5'
 gem 'base32', '~> 0.3.0'
 
@@ -305,15 +305,15 @@ gem 'gitlab-labkit', '0.12.0'
 
 # I18n
 gem 'ruby_parser', '~> 3.8', require: false
-gem 'rails-i18n', '~> 6.0'
+gem 'rails-i18n', '~> 6.0', '>= 6.0.0'
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.0'
 gem 'gettext', '~> 3.2.2', require: false, group: :development
 
 gem 'batch-loader', '~> 1.4.0'
 
 # Perf bar
-gem 'peek', '~> 1.1'
+gem 'peek', '~> 1.1', '>= 1.1.0'
 
 # Snowplow events tracking
 gem 'snowplow-tracker', '~> 0.6.1'
@@ -469,7 +469,7 @@ gem 'flipper-active_support_cache_store', '~> 0.17.1'
 gem 'unleash', '~> 0.1.5'
 
 # Structured logging
-gem 'lograge', '~> 0.5'
+gem 'lograge', '~> 0.10', '>= 0.10.0'
 gem 'grape_logging', '~> 1.7'
 
 # DNS Lookup
