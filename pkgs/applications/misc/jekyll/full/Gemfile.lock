@@ -124,7 +124,7 @@ GEM
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
-    yajl-ruby (1.4.1)
+    yajl-ruby (1.4.2)
     zeitwerk (2.4.0)
 
 PLATFORMS
@@ -148,7 +148,7 @@ DEPENDENCIES
   mime-types (~> 3.0)
   rdoc (~> 6.0)
   tomlrb (~> 1.2)
-  yajl-ruby (~> 1.4)
+  yajl-ruby (~> 1.4, >= 1.4.2)
 
 BUNDLED WITH
    2.1.4
