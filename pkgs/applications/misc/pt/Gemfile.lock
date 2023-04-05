@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.6.0)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.8.3)
+      public_suffix (>= 2.0.2, < 6.0)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -10,24 +10,23 @@ GEM
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     colored (1.2)
-    declarative (0.0.10)
-    declarative-option (0.1.0)
+    declarative (0.0.20)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     equalizer (0.0.11)
-    excon (0.64.0)
+    excon (0.99.0)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
-    faraday_middleware (0.13.1)
+    faraday_middleware (0.14.0)
       faraday (>= 0.7.4, < 1.0)
-    highline (2.0.2)
+    highline (2.1.0)
     hirb (0.7.3)
     hirb-unicode (0.0.5)
       hirb (~> 0.5)
       unicode-display_width (~> 0.1.1)
     ice_nine (0.11.2)
-    multi_json (1.13.1)
-    multipart-post (2.0.0)
+    multi_json (1.15.0)
+    multipart-post (2.3.0)
     pt (0.10.0)
       colored (~> 1.2)
       highline
@@ -35,12 +34,12 @@ GEM
       hirb-unicode (~> 0.0.5, >= 0.0.5)
       thor
       tracker_api (~> 1.6.0)
-    public_suffix (3.0.3)
-    representable (3.0.4)
+    public_suffix (5.0.1)
+    representable (3.2.0)
       declarative (< 0.1.0)
-      declarative-option (< 0.2.0)
+      trailblazer-option (>= 0.1.1, < 0.2.0)
       uber (< 0.2.0)
-    thor (0.20.3)
+    thor (1.2.1)
     thread_safe (0.3.6)
     tracker_api (1.6.0)
       addressable
@@ -51,13 +50,13 @@ GEM
       multi_json
       representable
       virtus
+    trailblazer-option (0.1.2)
     uber (0.1.0)
     unicode-display_width (0.1.1)
-    virtus (1.0.5)
+    virtus (2.0.0)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
-      equalizer (~> 0.0, >= 0.0.9)
 
 PLATFORMS
   ruby
