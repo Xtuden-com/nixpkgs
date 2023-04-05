@@ -1,15 +1,21 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    kramdown (1.17.0)
-    kramdown-asciidoc (1.0.1)
-      kramdown (~> 1.17.0)
+    kramdown (2.4.0)
+      rexml
+    kramdown-asciidoc (2.1.0)
+      kramdown (~> 2.4.0)
+      kramdown-parser-gfm (~> 1.1.0)
+      rexml (~> 3.2.0)
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
+    rexml (3.2.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  kramdown-asciidoc
+  kramdown-asciidoc (>= 2.0.0)
 
 BUNDLED WITH
    2.1.4

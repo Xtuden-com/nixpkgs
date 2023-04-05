@@ -1,2 +1,2 @@
 source 'https://rubygems.org'
-gem 'kramdown-asciidoc'
+gem 'kramdown-asciidoc', '>= 2.0.0'
