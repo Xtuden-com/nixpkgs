@@ -1,15 +1,19 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    connection_pool (2.4.0)
     drydock (0.6.9)
-    redis (4.1.0)
+    redis (5.0.6)
+      redis-client (>= 0.9.0)
+    redis-client (0.14.1)
+      connection_pool
     redis-dump (0.4.0)
       drydock (>= 0.6.9)
       redis (>= 4.0)
       uri-redis (>= 0.4.0)
       yajl-ruby (>= 0.1)
     uri-redis (0.4.2)
-    yajl-ruby (1.4.1)
+    yajl-ruby (1.4.3)
 
 PLATFORMS
   ruby
