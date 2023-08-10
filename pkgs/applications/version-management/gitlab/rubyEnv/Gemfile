@@ -93,7 +93,7 @@ gem 'graphql', '~> 1.10.5'
 # https://gitlab.com/gitlab-org/gitlab/issues/31747
 gem 'graphiql-rails', '~> 1.4.10'
 gem 'apollo_upload_server', '~> 2.0.0.beta3'
-gem 'graphql-docs', '~> 1.6.0', group: [:development, :test]
+gem 'graphql-docs', '~> 1.6.1', group: [:development, :test]
 
 # Disable strong_params so that Mash does not respond to :permitted?
 gem 'hashie-forbidden_attributes'
@@ -140,7 +140,7 @@ gem 'html-pipeline', '~> 2.12'
 gem 'deckar01-task_list', '2.3.1'
 gem 'gitlab-markup', '~> 1.7.1'
 gem 'github-markup', '~> 1.7.0', require: 'github/markup'
-gem 'commonmarker', '~> 0.20'
+gem 'commonmarker', '~> 0.23', '>= 0.23.10'
 gem 'RedCloth', '~> 4.3.2'
 gem 'rdoc', '~> 6.1.2'
 gem 'org-ruby', '~> 0.9.12'
@@ -301,7 +301,7 @@ gem 'sentry-raven', '~> 2.9'
 gem 'premailer-rails', '~> 1.10.3'
 
 # LabKit: Tracing and Correlation
-gem 'gitlab-labkit', '0.12.0'
+gem 'gitlab-labkit', '0.12.1'
 
 # I18n
 gem 'ruby_parser', '~> 3.8', require: false
@@ -454,9 +454,9 @@ group :ed25519 do
 end
 
 # Gitaly GRPC protocol definitions
-gem 'gitaly', '~> 13.0.0.pre.rc1'
+gem 'gitaly', '~> 13.6.1.0.0'
 
-gem 'grpc', '~> 1.24.0'
+gem 'grpc', '~> 1.53.2'
 
 gem 'google-protobuf', '~> 3.8.0'
 
