@@ -6,7 +6,7 @@
 	},
 	"dependencies": {
 		"@iarna/toml": "^2.2.5",
-		"cldr": "^5.5.4",
+		"cldr": "^7.1.1",
 		"ejs": "^3.1.3",
 		"fs-extra": "^9.0.0",
 		"object-assign": "^4.1.1",
@@ -18,7 +18,7 @@
 		"stylus": "^0.54.7",
 		"topsort": "^0.0.2",
 		"ttf2woff": "^2.0.1",
-		"ttf2woff2": "^3.0.0",
+		"ttf2woff2": "^4.0.4",
 		"typo-geom": "^0.8.0",
 		"unicode-13.0.0": "^0.8.0",
 		"unorm": "^1.6.0",
