@@ -20,7 +20,7 @@
     "tslib": "^2.0.1",
     "typescript": "^3.9.7",
     "typescript-formatter": "^7.2.2",
-    "vsce": "^1.79.5",
+    "vsce": "^2.15.0",
     "vscode-test": "^1.4.0"
   }
 }
