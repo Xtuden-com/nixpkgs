@@ -14,7 +14,7 @@
 		"string-argv": "^0.3.1",
 		"ts-loader": "^6.2.1",
 		"typescript": "^3.7.0",
-		"vsce": "^1.73.0",
+		"vsce": "^2.15.0",
 		"vscode-debugadapter-testsupport": "^1.35.0",
 		"vscode-debugprotocol": "^1.35.0",
 		"webpack": "^4.39.1",
