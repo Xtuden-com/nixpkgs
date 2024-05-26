@@ -18,7 +18,7 @@
   "dependencies": {
     "@passport-next/passport-openid": "^1.0.0",
     "Idle.Js": "git+https://github.com/shawnmclean/Idle.js",
-    "archiver": "^2.1.1",
+    "archiver": "^7.0.0",
     "async": "^2.1.4",
     "aws-sdk": "^2.345.0",
     "azure-storage": "^2.7.0",
@@ -51,7 +51,7 @@
     "helmet": "^3.21.1",
     "highlight.js": "~9.12.0",
     "i18n": "^0.8.3",
-    "imgur": "git+https://github.com/hackmdio/node-imgur.git",
+    "imgur": "1.0.0",
     "ionicons": "~2.0.1",
     "jquery": "^3.4.1",
     "jquery-mousewheel": "^3.1.13",
