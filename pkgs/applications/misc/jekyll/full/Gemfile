@@ -6,7 +6,7 @@ gem "jekyll-avatar"
 gem "jekyll-mentions"
 gem "jekyll-seo-tag"
 gem "jekyll-sitemap"
-gem "jemoji"
+gem "jemoji", ">= 0.13.0"
 
 # Optional dependencies:
 gem "jekyll-coffeescript"
