@@ -8,6 +8,6 @@ gem 'sensu-plugins-influxdb'
 # checks
 gem 'sensu-plugins-http'
 gem 'sensu-plugins-disk-checks'
-gem 'sensu-plugins-logs'
+gem 'sensu-plugins-logs', '>= 2.0.0'
 gem 'sensu-plugins-systemd'
 # gem 'sensu-plugins-process-checks'
