@@ -24,7 +24,7 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-timeago": "^4.1.9",
-    "remove-markdown": "^0.3.0",
+    "remove-markdown": "^0.5.0",
     "typeface-roboto": "0.0.75"
   },
   "scripts": {
