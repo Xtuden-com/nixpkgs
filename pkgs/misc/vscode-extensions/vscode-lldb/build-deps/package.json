@@ -18,7 +18,7 @@
 		"vscode-debugadapter-testsupport": "^1.35.0",
 		"vscode-debugprotocol": "^1.35.0",
 		"webpack": "^4.39.1",
-		"webpack-cli": "^3.3.7",
+		"webpack-cli": "^4.0.0",
 		"yauzl": "^2.10.0"
 	}
 }
