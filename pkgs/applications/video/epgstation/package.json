@@ -61,7 +61,7 @@
     "gulp-sourcemaps": "2.6.5",
     "gulp-tslint": "8.1.4",
     "gulp-typescript": "5.0.1",
-    "terser-webpack-plugin": "3.0.7",
+    "terser-webpack-plugin": "5.3.11",
     "ts-loader": "8.0.1",
     "tslint": "6.1.2",
     "typescript": "3.9.7",
