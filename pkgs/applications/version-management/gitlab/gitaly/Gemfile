@@ -29,7 +29,7 @@ group :development, :test do
   gem 'rspec', require: false
   gem 'rspec-parameterized', require: false
   gem 'timecop', require: false
-  gem 'factory_bot', require: false
+  gem 'factory_bot', '>= 6.5.1', require: false
   gem 'pry', '~> 0.12.2', require: false
 
   gem 'grpc-tools', '= 1.0.1'
