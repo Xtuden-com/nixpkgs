@@ -1,8 +1,8 @@
 source "https://rubygems.org"
-gem "jekyll"
+gem "jekyll", ">= 4.2.0"
 # jekyll alone might be enough for most use-cases
-gem "jekyll-avatar"
+gem "jekyll-avatar", ">= 0.8.0"
 gem "jekyll-mentions"
-gem "jekyll-seo-tag"
+gem "jekyll-seo-tag", ">= 2.7.0"
 gem "jekyll-sitemap"
-gem "jemoji"
+gem "jemoji", ">= 0.13.0"
