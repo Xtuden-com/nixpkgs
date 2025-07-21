@@ -1,17 +1,17 @@
 source "https://rubygems.org"
 
-gem "jekyll"
+gem "jekyll", ">= 4.2.0"
 
-gem "jekyll-avatar"
+gem "jekyll-avatar", ">= 0.8.0"
 gem "jekyll-mentions"
-gem "jekyll-seo-tag"
+gem "jekyll-seo-tag", ">= 2.7.0"
 gem "jekyll-sitemap"
-gem "jemoji"
+gem "jemoji", ">= 0.13.0"
 
 # Optional dependencies:
 gem "jekyll-coffeescript"
 #gem "jekyll-docs"
-gem "jekyll-feed", "~> 0.9"
+gem "jekyll-feed", "~> 0.15", ">= 0.15.1"
 gem "jekyll-gist"
 gem "jekyll-paginate"
 gem "jekyll-redirect-from"
