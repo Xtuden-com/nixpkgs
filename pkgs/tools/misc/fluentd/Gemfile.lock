@@ -31,30 +31,43 @@ GEM
       aws-sigv4 (~> 1.1)
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
+    base64 (0.3.0)
     bson (4.5.0)
-    concurrent-ruby (1.1.5)
-    cool.io (1.5.4)
-    dig_rb (1.0.1)
+    concurrent-ruby (1.3.6)
+    cool.io (1.9.3)
+    csv (3.3.5)
     digest-crc (0.4.1)
-    elasticsearch (7.3.0)
-      elasticsearch-api (= 7.3.0)
-      elasticsearch-transport (= 7.3.0)
-    elasticsearch-api (7.3.0)
+    drb (2.2.3)
+    elastic-transport (8.4.1)
+      faraday (< 3)
       multi_json
-    elasticsearch-transport (7.3.0)
-      faraday
+    elasticsearch (9.3.0)
+      elastic-transport (~> 8.3)
+      elasticsearch-api (= 9.3.0)
+    elasticsearch-api (9.3.0)
+      base64
       multi_json
-    excon (0.66.0)
-    faraday (0.15.4)
-      multipart-post (>= 1.2, < 3)
+    excon (1.3.2)
+      logger
+    faraday (2.14.1)
+      faraday-net_http (>= 2.0, < 3.5)
+      json
+      logger
+    faraday-excon (2.4.0)
+      excon (>= 1.0.0)
+      faraday (>= 2.11.0, < 3)
+    faraday-net_http (3.4.2)
+      net-http (~> 0.5)
     fluent-config-regexp-type (1.0.0)
       fluentd (> 1.0.0, < 2)
     fluent-plugin-cloudwatch-logs (0.7.4)
       aws-sdk-cloudwatchlogs (~> 1.0)
       fluentd (>= 0.14.15)
-    fluent-plugin-elasticsearch (3.5.5)
+    fluent-plugin-elasticsearch (6.0.0)
       elasticsearch
       excon
+      faraday (>= 2.0.0)
+      faraday-excon (>= 2.0.0)
       fluentd (>= 0.14.22)
     fluent-plugin-kafka (0.11.1)
       fluentd (>= 0.10.58, < 2)
@@ -83,48 +96,60 @@ GEM
     fluent-plugin-webhdfs (1.2.4)
       fluentd (>= 0.14.22)
       webhdfs (>= 0.6.0)
-    fluentd (1.7.0)
+    fluentd (1.18.0)
+      base64 (~> 0.2)
+      bundler
       cool.io (>= 1.4.5, < 2.0.0)
-      dig_rb (~> 1.0.0)
-      http_parser.rb (>= 0.5.1, < 0.7.0)
-      msgpack (>= 0.7.0, < 2.0.0)
-      serverengine (>= 2.0.4, < 3.0.0)
-      sigdump (~> 0.2.2)
-      strptime (>= 0.2.2, < 1.0.0)
-      tzinfo (~> 2.0)
+      csv (~> 3.2)
+      drb (~> 2.2)
+      http_parser.rb (>= 0.5.1, < 0.9.0)
+      logger (~> 1.6)
+      msgpack (>= 1.3.1, < 2.0.0)
+      serverengine (>= 2.3.2, < 3.0.0)
+      sigdump (~> 0.2.5)
+      strptime (>= 0.2.4, < 1.0.0)
+      tzinfo (>= 1.0, < 3.0)
       tzinfo-data (~> 1.0)
+      webrick (~> 1.4)
       yajl-ruby (~> 1.0)
     google-protobuf (3.9.1)
-    http_parser.rb (0.6.0)
+    http_parser.rb (0.8.1)
     jmespath (1.4.0)
+    json (2.18.1)
+    logger (1.7.0)
     ltsv (0.1.2)
     mongo (2.6.4)
       bson (>= 4.3.0, < 5.0.0)
-    msgpack (1.3.1)
-    multi_json (1.13.1)
-    multipart-post (2.1.1)
+    msgpack (1.8.0)
+    multi_json (1.19.1)
+    net-http (0.9.1)
+      uri (>= 0.11.1)
     public_suffix (4.0.1)
     ruby-kafka (0.7.10)
       digest-crc
-    serverengine (2.1.1)
+    serverengine (2.4.0)
+      base64 (~> 0.1)
+      logger (~> 1.4)
       sigdump (~> 0.2.2)
-    sigdump (0.2.4)
-    strptime (0.2.3)
+    sigdump (0.2.5)
+    strptime (0.2.5)
     thrift (0.8.0)
-    tzinfo (2.0.0)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2019.2)
+    tzinfo-data (1.2025.3)
       tzinfo (>= 1.0.0)
+    uri (1.1.1)
     webhdfs (0.8.0)
       addressable
-    yajl-ruby (1.4.1)
+    webrick (1.9.2)
+    yajl-ruby (1.4.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   fluent-plugin-cloudwatch-logs
-  fluent-plugin-elasticsearch
+  fluent-plugin-elasticsearch (>= 3.5.6)
   fluent-plugin-kafka
   fluent-plugin-kinesis
   fluent-plugin-mongo
@@ -136,4 +161,4 @@ DEPENDENCIES
   fluentd
 
 BUNDLED WITH
-   2.1.4
+   2.3.27
