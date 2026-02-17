@@ -11,8 +11,8 @@ gem 'rdoc', '~> 6.0'
 gem 'gitlab-gollum-lib', '~> 4.2.7.9', require: false
 gem 'gitlab-gollum-rugged_adapter', '~> 0.4.4.2', require: false
 gem 'grpc', '~> 1.24.0'
-gem 'sentry-raven', '~> 2.9.0', require: false
-gem 'faraday', '~> 0.12'
+gem 'sentry-raven', '~> 3.0.0', require: false
+gem 'faraday', '~> 2.14', '>= 2.14.1'
 gem 'rbtrace', require: false
 
 # Labkit provides observability functionality
